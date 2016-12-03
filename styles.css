@@ -1,0 +1,264 @@
+/* Color Pallet + Fonts
+Light Grey: #FAFAFA
+Mid Grey: #808080
+Dark Grey: #424242
+Logo Color: #1990e2
+font-family: 'Fjalla One', sans-serif; TITLE
+font-family: 'Josefin Sans', sans-serif; NAV
+font-family: 'Quicksand', sans-serif; BODY TEXT
+/*
+
+
+/* Base */
+body {
+  box-sizing: border-box;
+  color: #424242;
+  text-align: center;
+  position: relative;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Header Styles */
+.main-header,
+.title,
+.decoration,
+.top-nav,
+.button {
+	margin: 0 auto;
+}
+
+.main-header {
+  background: #424242;
+  color: white;
+}
+.title {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 2rem;
+	line-height: 100px;
+	margin-bottom: -2rem;
+}
+.decoration {
+	display: block;
+	height: 50px;
+	width: 50px;
+	padding: 1rem;
+}
+.top-nav {
+	padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.top-nav li {
+  list-style-type: none;
+  width: 100px;
+	padding: .5rem;
+}
+.top-nav li:hover {
+	background-color: #525252;
+	transition: background-color .5s;
+	font-weight: bold;
+}
+
+
+
+/* Hero Styles */
+.hero-slice {
+	background-image: linear-gradient(to top, black, transparent 50%), url("images/skyline-blue.png");
+	background-size: cover;
+  height: 625px;
+  position: relative;
+  display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.hero-text {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #FAFAFA;
+}
+
+
+/* About Styles*/
+.about-slice {
+	padding: 3rem;
+	background: url("images/01.png");
+  background-size: cover;
+  height: 50%;
+  position: relative;
+}
+.design-text {
+	color: #FAFAFA;
+	padding: 1rem;
+	line-height: 1.5rem;
+	vertical-align: top;
+	text-align: left;
+}
+.design-img {
+	height: 250px;
+	width: 250px;
+}
+
+/* Projects Styles */
+.projects-slice {
+	background-color: #424242;
+	color: #808080;
+	padding: 2rem;
+}
+
+.project {
+	display: inline-block;
+	margin: 1rem;
+	position: relative;
+	width: 70%;
+	overflow: hidden;
+}
+
+.project-img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.overlay {
+  background-color: black;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  top: 0%;
+  height: 98.8%;
+  width: 100%;
+  transition: opacity .25s;
+  display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+.overlay-text {
+	color: #FAFAFA;
+}
+
+.project:hover .overlay {
+  opacity: 0.9;
+}
+
+
+/* Contact Styles */
+.contact {
+  background: url("images/hero5.png");
+  padding: 2rem;
+}
+.email {
+	padding: 3rem;
+}
+.social-icons {
+	margin: 0 auto;
+	padding-left: 0;
+	margin-left: 0;
+	list-style-type: none;
+}
+.social-icons a {
+	color: #FAFAFA;
+	text-align: center;
+	padding: .5rem;
+}
+.social-icons li {
+	display: inline-block;
+	color: #FAFAFA;
+	width: 65px;
+}
+/* .contact-box {
+	padding: 1rem;
+}
+#name,
+#mail,
+#message {
+	margin-bottom: 1rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: .8rem;
+} */
+
+
+/* Footer Styles */
+.main-footer {
+  background-color: #424242;
+  text-align: middle;
+}
+.copyright,
+.bottom-nav,
+.bottom-nav li,
+.bottom-nav a {
+  color: #FAFAFA;
+  display: inline-block;
+  padding: .5rem;
+  vertical-align: middle;
+}
+.bottom-nav li {
+  list-style-type: none;
+  width: 80px;
+	padding: .2rem;
+}
+.bottom-nav li:hover {
+	background-color: #525252;
+	transition: background-color .5s;
+	font-weight: bold;
+}
+
+
+.inner {
+	width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+}
+
+
+@media (min-width: 769px) {
+	/* Header Styles */
+	.title {
+		font-size: 3rem;
+	}
+	.decoration {
+		height: 85px;
+		width: 85px;
+	}
+	.top-nav,
+	.top-nav li {
+  		display: inline-block;
+	}
+	.top-nav li {
+		padding: 1rem;
+	}
+
+	/* Hero */
+
+	/* Design Slice */
+	.design-text,
+	.design-img,
+	.about-text{
+		display: inline-block;
+	}
+	.design-text {
+		margin-top: 50px;
+		width: 40%;
+	}
+	.design-img {
+		height: 300px;
+		width: 300px;
+	}
+
+	/* Project Styles*/
+	.project {
+		width: 35%;
+	}
+
+	/* Contact
+	#name,
+	#mail,
+	#message {
+		width: 50%;
+	} */
+}
